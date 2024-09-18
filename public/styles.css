@@ -1,0 +1,88 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #ffafbd, #ffc3a0); /* Gradient background with soft pink tones */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    padding: 40px;
+    max-width: 400px;
+    width: 100%;
+}
+
+p {
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 8px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333333;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #ff6f61; /* Highlight border when input is focused */
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button.sign-up-button, button.signin-button {
+    background-color: #ff6f61; /* Soft coral for sign-up and sign-in buttons */
+    color: white;
+}
+
+button.sign-up-button:hover, button.signin-button:hover {
+    background-color: #e65c54; /* Darker coral on hover */
+}
+
+button.info-user, button.logout {
+    background-color: #4db6ac; /* Cool teal for info and logout buttons */
+    color: white;
+}
+
+button.info-user:hover, button.logout:hover {
+    background-color: #388e7b; /* Darker teal on hover */
+}
+
+/* Responsive design */
+@media (max-width: 500px) {
+    .container {
+        padding: 20px;
+    }
+    
+    input[type="text"], button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}

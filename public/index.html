@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"></script>
+<body>
+    
+    <div class="container">
+
+        <div class="signup">
+            <p>username</p>
+            <input class="signup-username"type="text">
+            <p>password</p>
+            <input class="signup-password" type="text">
+            <button class="sign-up-button" onclick="signup()">sign up</button>
+        </div>
+
+        <div class="signin">
+            <p>username</p>
+            <input class="signin-username"type="text">
+            <p>password</p>
+            <input class="signin-password" type="text">
+            <button class="signin-button" onclick="signin()">sign up</button>
+        </div>
+
+        <div class="info">
+            <button class="info-user" onclick="info()">show user info</button>
+            <p class="populate"></p>
+        </div>
+        <div class="lg">
+            <button class="logout" onclick="logout()">logout</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
